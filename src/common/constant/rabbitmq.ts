@@ -1,10 +1,9 @@
-export const RABBIT_MESSAGE_QUEUE = 'rabbit-message-queue';
-
-export const RABBIT_EVENT_NAMES = {
-  TEST_EVENT_MESSAGE: 'test-event-message',
+export const RABBIT_QUEUES = {
+  MESSAGE_1: 'message-queue-1',
+  MESSAGE_2: 'message-queue-2',
 };
 
-export const RABBIT_MESSAGE_NAMES = {
-  TEST_MESSAGE: 'test-message',
-  TEST_PRIORITY_MESSAGE: 'test-priority-message',
+export const PATTERN_NAMES = {
+  EMIT_PATTERN: 'emit-pattern',
+  SEND_PATTERN: 'send-pattern',
 };

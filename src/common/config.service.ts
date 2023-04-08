@@ -1,5 +1,5 @@
 import { ClientOptions, Transport } from '@nestjs/microservices';
-import { RABBIT_MESSAGE_QUEUE } from 'common/constant/rabbitmq';
+import { RABBIT_QUEUES } from 'common/constant/rabbitmq';
 
 import * as dotenv from 'dotenv';
 
@@ -48,7 +48,7 @@ export class ConfigService {
       transport: Transport.RMQ,
       options: {
         urls: [rabbitUrl],
-        queue: RABBIT_MESSAGE_QUEUE,
+        queue: RABBIT_QUEUES.MESSAGE_1,
         queueOptions: {
           durable: true,
         },
